@@ -13,7 +13,8 @@ jobs:
         with:
           gradle-version: 8.12
       - run: gradle build --no-daemon
+        working-directory: VekermanVisual
       - uses: actions/upload-artifact@v4
         with:
           name: VekermanVisual
-          path: build/libs/*.jar
+          path: VekermanVisual/build/libs/*.jar
